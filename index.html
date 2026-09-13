@@ -1,139 +1,908 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tempra Labs | Weather &amp; Climate Risk Intelligence</title>
-<meta name="description" content="Tempra Labs provides hyperlocal weather and climate-risk intelligence for heat safety, flood risk, insurance, infrastructure, and weather-sensitive operations.">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="author" content="Tempra Labs Inc.">
-<meta name="theme-color" content="#050608">
-<meta property="og:site_name" content="Tempra Labs">
-<meta property="og:title" content="Tempra Labs | Weather &amp; Climate Risk Intelligence">
-<meta property="og:description" content="Turn high-resolution weather intelligence into decisions that protect people, assets, and operations.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tempralabs.ai/">
-<meta property="og:image" content="https://tempralabs.ai/assets/tempra-labs-logo.png">
-<meta property="og:image:alt" content="Tempra Labs logo">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Tempra Labs | Weather &amp; Climate Risk Intelligence">
-<meta name="twitter:description" content="Hyperlocal weather and climate-risk intelligence that turns forecasts into operational action.">
-<meta name="twitter:image" content="https://tempralabs.ai/assets/tempra-labs-logo.png">
-<link rel="canonical" href="https://tempralabs.ai/">
-<link rel="icon" type="image/png" href="/assets/tempra-labs-logo-trimmed.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://tempralabs.ai/#organization",
-      "name": "Tempra Labs Inc.",
-      "url": "https://tempralabs.ai/",
-      "logo": "https://tempralabs.ai/assets/tempra-labs-logo.png",
-      "email": "contact@tempralabs.ai",
-      "description": "Tempra Labs develops hyperlocal weather and climate-risk intelligence for heat safety, flood risk, insurance, infrastructure, and weather-sensitive operations.",
-      "sameAs": [
-        "https://www.linkedin.com/company/tempra-labs/"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://tempralabs.ai/#website",
-      "url": "https://tempralabs.ai/",
-      "name": "Tempra Labs",
-      "publisher": {
-        "@id": "https://tempralabs.ai/#organization"
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tempra Labs turns high-resolution weather intelligence into clear operational priorities for teams, sites, and critical infrastructure.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Tempra Labs Inc.">
+  <meta name="theme-color" content="#091012">
+  <title>Tempra Labs | Operational Weather Intelligence</title>
+  <link rel="canonical" href="https://tempralabs.ai/">
+  <link rel="icon" type="image/png" href="/assets/tempra-labs-logo-trimmed.png">
+  <meta property="og:site_name" content="Tempra Labs">
+  <meta property="og:title" content="Tempra Labs | Operational Weather Intelligence">
+  <meta property="og:description" content="Know what may be affected. Act before impact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tempralabs.ai/">
+  <meta property="og:image" content="https://tempralabs.ai/assets/tempra-labs-logo.png">
+  <meta property="og:image:alt" content="Tempra Labs logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tempra Labs | Operational Weather Intelligence">
+  <meta name="twitter:description" content="High-resolution weather intelligence translated into operational priorities.">
+  <meta name="twitter:image" content="https://tempralabs.ai/assets/tempra-labs-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://tempralabs.ai/#organization",
+        "name": "Tempra Labs Inc.",
+        "url": "https://tempralabs.ai/",
+        "logo": "https://tempralabs.ai/assets/tempra-labs-logo.png",
+        "email": "contact@tempralabs.ai",
+        "description": "Tempra Labs develops operational weather intelligence for organizations exposed to weather and climate risk.",
+        "sameAs": ["https://www.linkedin.com/company/tempra-labs/"]
       },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://tempralabs.ai/#heatsafe",
-      "name": "Tempra HeatSafe",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "url": "https://tempralabs.ai/#heatsafe",
-      "description": "Occupational heat-risk decision support with hourly site-specific WBGT, safer work windows, action records, and reporting.",
-      "publisher": {
-        "@id": "https://tempralabs.ai/#organization"
+      {
+        "@type": "WebSite",
+        "@id": "https://tempralabs.ai/#website",
+        "url": "https://tempralabs.ai/",
+        "name": "Tempra Labs",
+        "publisher": {"@id": "https://tempralabs.ai/#organization"},
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://tempralabs.ai/#heatsafe",
+        "name": "HeatSafe",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://tempralabs.ai/#heatsafe",
+        "description": "Operational heat-risk intelligence for outdoor and heat-exposed work.",
+        "publisher": {"@id": "https://tempralabs.ai/#organization"}
       }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #10181a;
+      --ink-soft: #334246;
+      --night: #091012;
+      --night-2: #142124;
+      --paper: #f3f0e8;
+      --white: #fff;
+      --amber: #f3a21b;
+      --amber-dark: #a95f00;
+      --sage: #ccd7ca;
+      --line: rgba(16, 24, 26, .17);
+      --line-light: rgba(255, 255, 255, .24);
+      --max: 1220px;
+      --serif: "Newsreader", Georgia, serif;
+      --sans: "Source Sans 3", Arial, sans-serif;
     }
-  ]
-}
-</script>
-<style>
-:root{--logo-image:url("data:image/png;base64,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");
-  --bg:#050608;--bg2:#090b0f;--panel:#0d1117;--panel2:#111821;--text:#f7f7f8;
-  --muted:#9da6b1;--line:rgba(255,255,255,.10);--line2:rgba(255,255,255,.18);
-  --amber:#ffad13;--amber2:#ff7a00;--green:#64d49c;--blue:#5ab8ff;--max:1200px;
-}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:0 auto}.muted{color:var(--muted)}
-.nav{position:fixed;inset:0 0 auto 0;z-index:50;height:76px;display:flex;align-items:center;background:rgba(5,6,8,.72);backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:.2s}.nav.scrolled{border-color:var(--line);background:rgba(5,6,8,.92)}.navin{display:flex;align-items:center;justify-content:space-between;gap:24px}.brandcrop{display:block;flex:0 0 auto;width:auto;height:46px;aspect-ratio:857/384;background-image:var(--logo-image);background-size:contain;background-position:left center;background-repeat:no-repeat}.navlinks{display:flex;align-items:center;gap:26px;font-size:13px;color:#bec5cc}.navlinks a:hover{color:#fff}.navcta{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#fff;color:#08090b;font-weight:800;font-size:12px}.menu{display:none;background:transparent;border:1px solid var(--line);color:#fff;border-radius:8px;padding:8px 10px}
-.hero{min-height:760px;padding:150px 0 92px;position:relative;overflow:hidden;background:radial-gradient(800px 500px at 82% 26%,rgba(255,168,19,.10),transparent 64%),radial-gradient(700px 520px at 74% 60%,rgba(90,184,255,.08),transparent 68%)}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.35),transparent 76%)}.heroGrid{display:grid;grid-template-columns:1.02fr .98fr;gap:64px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:850;letter-spacing:.14em;text-transform:uppercase;color:#ffd27a;border:1px solid rgba(255,173,19,.25);background:rgba(255,173,19,.07);padding:8px 10px;border-radius:999px}.eyebrow:before{content:"";width:6px;height:6px;background:var(--amber);border-radius:50%;box-shadow:0 0 0 4px rgba(255,173,19,.08)}h1{font-size:clamp(52px,6.3vw,82px);letter-spacing:-.055em;line-height:.96;margin:24px 0 22px;max-width:760px}h1 span{background:linear-gradient(90deg,#fff 0%,#fff1c3 46%,#ffb21d 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:18px;line-height:1.7;color:#b6bec7;max-width:650px}.lead strong{color:#f1f3f5;font-weight:650}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 17px;border-radius:10px;border:1px solid var(--line);font-size:13px;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-1px);border-color:var(--line2)}.btn.primary{background:linear-gradient(135deg,#ffba24,#ff8a00);color:#14100a;border-color:transparent;box-shadow:0 16px 50px rgba(255,149,0,.18)}.btn.ghost{background:rgba(255,255,255,.025);color:#e5e8eb}.cred{display:flex;flex-wrap:wrap;gap:22px;margin-top:42px;padding-top:22px;border-top:1px solid var(--line);max-width:620px}.cred b{display:block;font-size:11px}.cred span{font-size:9px;color:#73808b}
-.heroPanel{position:relative;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:linear-gradient(145deg,#121720,#080b10);padding:14px;box-shadow:0 34px 90px rgba(0,0,0,.4)}.panelTop{height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 6px 12px;border-bottom:1px solid var(--line);font-size:8px;letter-spacing:.12em;color:#78848f}.live{display:inline-flex;align-items:center;gap:7px}.live:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(100,212,156,.08)}.panelGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:10px;margin-top:10px}.heatmap{height:330px;position:relative;overflow:hidden;border-radius:12px;background:linear-gradient(145deg,#0e1b22,#0c2931)}.heatmap:before{content:"";position:absolute;inset:-20%;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:34px 34px;transform:rotate(-5deg)}.hot{position:absolute;border-radius:50%;filter:blur(20px)}.hot.a{width:190px;height:170px;background:#ff8f18;opacity:.62;left:23%;top:17%}.hot.b{width:230px;height:180px;background:#ffe65b;opacity:.26;left:10%;top:37%}.hot.c{width:160px;height:130px;background:#61d39b;opacity:.20;right:4%;bottom:16%}.pin{position:absolute;width:9px;height:9px;border-radius:50%;background:#fff;border:2px solid #ff8a00;box-shadow:0 0 0 5px rgba(255,138,0,.14)}.pin.p1{left:52%;top:33%}.pin.p2{left:34%;top:70%}.mapCaption{position:absolute;left:14px;bottom:12px;background:rgba(5,8,10,.75);border:1px solid var(--line);padding:7px 9px;border-radius:7px;font-size:7px;color:#9aabb5}.metrics{display:grid;gap:8px}.metric{background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:11px;padding:15px}.metric:first-child{background:linear-gradient(145deg,rgba(255,157,14,.10),rgba(255,255,255,.02));border-color:rgba(255,173,19,.22)}.metric small{font-size:7px;letter-spacing:.1em;color:#7f8a95}.metric strong{display:block;font-size:28px;margin:5px 0}.metric span{font-size:8px;color:#87939d}.spark{display:flex;align-items:end;gap:5px;height:78px;margin-top:10px;padding:10px;background:#070a0e;border:1px solid var(--line);border-radius:10px}.spark i{display:block;flex:1;border-radius:2px 2px 0 0;background:linear-gradient(#ffb51d,#5ab8ff)}
-.section{padding:112px 0;border-top:1px solid var(--line)}.kicker{font-size:9px;letter-spacing:.18em;font-weight:850;text-transform:uppercase;color:#ffb21d;margin-bottom:14px}.sectionHead{display:grid;grid-template-columns:1fr 420px;gap:64px;align-items:end;margin-bottom:42px}.sectionHead h2,.split h2,.company h2,.contact h2{margin:0;font-size:clamp(38px,4.3vw,58px);letter-spacing:-.045em;line-height:1.02}.sectionHead p{margin:0;font-size:15px;line-height:1.7;color:#9fa9b3}.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.card{grid-column:span 2;min-height:350px;border:1px solid var(--line);border-radius:15px;padding:24px;background:linear-gradient(145deg,#0c1016,#090c10);display:flex;flex-direction:column;transition:.2s}.card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.22)}.card.featured{grid-column:span 4;background:radial-gradient(500px 250px at 100% 0%,rgba(255,165,16,.12),transparent 64%),linear-gradient(145deg,#11161d,#090c10)}.cardTop{display:flex;justify-content:space-between;align-items:center}.icon{width:42px;height:42px;border-radius:10px;border:1px solid rgba(255,173,19,.18);background:rgba(255,173,19,.06);display:grid;place-items:center;color:#ffc04d;font-weight:900}.badge{font-size:7px;letter-spacing:.12em;padding:6px 8px;border:1px solid var(--line);border-radius:999px;color:#8b96a0}.featured .badge{color:#ffbb3f;border-color:rgba(255,173,19,.20)}.sector{font-size:8px;letter-spacing:.10em;text-transform:uppercase;color:#6f7c86;margin-top:25px}.card h3{font-size:25px;margin:8px 0 12px}.card p{font-size:12px;line-height:1.65;color:#98a3ad;margin:0}.card ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:7px}.card li{font-size:10.5px;color:#c0c7ce}.card li:before{content:"✓";color:var(--green);margin-right:8px}.card a{margin-top:auto;padding-top:22px;font-size:11px;font-weight:800;color:#ffc04d}
-.process{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#080a0e}.processGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.step{position:relative}.step:not(:last-child):after{content:"→";position:absolute;right:-8px;top:12px;color:#45515b}.step small{font-size:8px;color:#6d7881;letter-spacing:.12em}.step b{display:block;margin-top:4px;font-size:14px}.step span{display:block;font-size:9px;color:#7d8993;margin-top:2px}
-.heatsafe{background:radial-gradient(700px 520px at 90% 28%,rgba(255,137,0,.10),transparent 65%),#080b0f}.split{display:grid;grid-template-columns:.82fr 1.18fr;gap:70px;align-items:center}.split p{font-size:15px;line-height:1.75;color:#a6b0ba}.capList{display:grid;gap:12px;margin:28px 0}.cap{display:grid;grid-template-columns:36px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}.cap>span{font-size:10px;color:#ffae18;font-weight:850}.cap b{font-size:13px}.cap p{font-size:11px;margin:4px 0 0;color:#87939d}.ui{border:1px solid rgba(255,255,255,.13);border-radius:16px;background:#0b1016;padding:14px;box-shadow:0 30px 75px rgba(0,0,0,.28)}.uiHead{display:flex;justify-content:space-between;font-size:8px;letter-spacing:.1em;color:#7e8a94;padding:4px 4px 12px;border-bottom:1px solid var(--line)}.uiTitle{display:flex;justify-content:space-between;align-items:start;padding:18px 4px}.uiTitle small{font-size:8px;color:#78838d;letter-spacing:.1em}.uiTitle h4{font-size:22px;margin:5px 0 0}.risk{font-size:8px;font-weight:850;letter-spacing:.1em;color:#ffbd44;background:rgba(255,173,19,.08);border:1px solid rgba(255,173,19,.20);padding:7px 9px;border-radius:999px}.triple{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.box{border:1px solid var(--line);border-radius:10px;padding:13px;background:rgba(255,255,255,.02)}.box small{font-size:7px;color:#7e8993;letter-spacing:.08em}.box strong{display:block;font-size:24px;margin:4px 0}.box span{font-size:8px;color:#7e8993}.hourly{height:130px;display:flex;align-items:end;gap:7px;padding:15px;margin-top:8px;border:1px solid var(--line);border-radius:10px;background:#070a0d}.hourly i{flex:1;display:block;border-radius:3px 3px 0 0;background:linear-gradient(#ffb21d,#ff7b00)}.recommend{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:center;margin-top:8px;padding:13px;border-radius:10px;border:1px solid rgba(100,212,156,.18);background:rgba(100,212,156,.05)}.recommend .check{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(100,212,156,.12);color:#75dfa9}.recommend small{display:block;font-size:7px;color:#75dfa9;letter-spacing:.1em}.recommend b{display:block;font-size:11px;margin-top:3px}.recommend span{display:block;font-size:8px;color:#7e8a94;margin-top:2px}.recommend button{border:1px solid var(--line);background:#11161d;color:#dfe4e8;border-radius:8px;font-size:8px;padding:8px 10px}
-.platformGrid{display:grid;grid-template-columns:1fr 120px 1fr;gap:30px;align-items:center;margin-top:44px}.flow{display:grid;gap:10px}.flowLabel{font-size:8px;letter-spacing:.14em;color:#6f7b85;margin-bottom:3px}.flowCard{display:flex;align-items:center;gap:12px;padding:13px;border:1px solid var(--line);border-radius:10px;background:#0b0f14}.dot{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:rgba(90,184,255,.07);border:1px solid rgba(90,184,255,.16);font-size:9px;font-weight:850;color:#65c1ff}.flow.output .dot{background:rgba(255,173,19,.07);border-color:rgba(255,173,19,.18);color:#ffc24d}.flowCard b{font-size:11px}.flowCard span{display:block;font-size:8px;color:#77848e;margin-top:2px}.engine{width:112px;height:112px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,173,19,.22);background:radial-gradient(circle,rgba(255,173,19,.12),transparent 66%);box-shadow:0 0 0 12px rgba(255,173,19,.025),0 0 0 24px rgba(255,173,19,.015)}.engine b{font-size:14px}.engine small{display:block;font-size:6px;letter-spacing:.12em;color:#8b96a0;text-align:center}
-.industries{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.industry{padding:22px;border:1px solid var(--line);border-radius:13px;background:#0a0e13}.industry .big{font-size:22px;color:#ffb21d}.industry h3{font-size:18px;margin:18px 0 7px}.industry p{font-size:11px;line-height:1.6;color:#919ca6}.industry span{display:block;margin-top:18px;font-size:8px;color:#6f7b84}
-.company{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}.biglogo{display:block;width:min(360px,100%);aspect-ratio:857/384;margin-bottom:22px;background-image:var(--logo-image);background-size:contain;background-position:left center;background-repeat:no-repeat}.company .copy{font-size:15px;line-height:1.8;color:#a6b0ba}.company .copy strong{color:#eff2f4}.company .copy a{display:inline-block;margin-top:16px;color:#ffc04d;font-weight:800;font-size:12px}
-.contact{padding:115px 0;text-align:center;background:radial-gradient(700px 380px at 50% 55%,rgba(255,161,8,.11),transparent 65%)}.contact p{max-width:620px;margin:18px auto 0;color:#a3adb7;font-size:15px;line-height:1.7}.contact .actions{justify-content:center}.email{display:block;margin-top:26px;font-size:12px;color:#7f8a94}
-footer{border-top:1px solid var(--line);padding:32px 0 26px;background:#040507}.footerTop{display:flex;justify-content:space-between;align-items:center}.footerNav{display:flex;gap:20px;font-size:11px;color:#909aa4}.footerBottom{display:flex;justify-content:space-between;gap:20px;padding-top:20px;margin-top:20px;border-top:1px solid var(--line);font-size:9px;color:#64717b}.legal{margin-top:13px;font-size:8px;color:#4f5a63;line-height:1.5;max-width:900px}
-@media(max-width:920px){.navlinks{display:none}.menu{display:block}.nav.open .navlinks{display:flex;position:absolute;top:76px;left:0;right:0;background:#07090c;border-bottom:1px solid var(--line);padding:18px 24px;flex-direction:column;align-items:flex-start}.navcta{display:none}.heroGrid,.sectionHead,.split,.company{grid-template-columns:1fr}.hero{padding-top:125px}.heroPanel{margin-top:10px}.sectionHead{gap:16px}.cards{grid-template-columns:1fr 1fr}.card,.card.featured{grid-column:auto}.platformGrid{grid-template-columns:1fr}.engine{margin:8px auto}.industries{grid-template-columns:1fr 1fr}.processGrid{grid-template-columns:1fr 1fr}.step:not(:last-child):after{display:none}.biglogo{width:min(300px,100%)}.footerTop,.footerBottom{align-items:flex-start;flex-direction:column}}
-@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 32px))}.brandcrop{height:36px}.hero{min-height:auto;padding-bottom:70px}.heroGrid{gap:36px}.panelGrid{grid-template-columns:1fr}.heatmap{height:260px}.metrics{grid-template-columns:repeat(3,1fr)}.metric{padding:10px}.metric strong{font-size:20px}.spark{display:none}.section{padding:82px 0}.cards,.industries,.processGrid{grid-template-columns:1fr}.triple{grid-template-columns:1fr 1fr 1fr}.recommend{grid-template-columns:34px 1fr}.recommend button{display:none}.footerNav{flex-wrap:wrap}.biglogo{width:min(240px,100%)}}
-</style>
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+    figure { margin: 0; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .skip-link {
+      position: fixed;
+      z-index: 100;
+      left: 18px;
+      top: -80px;
+      background: var(--white);
+      color: var(--ink);
+      padding: 10px 14px;
+      border-radius: 4px;
+      transition: top .2s ease;
+    }
+    .skip-link:focus { top: 12px; }
+
+    .container {
+      width: min(calc(100% - 48px), var(--max));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 2px;
+      margin: 0 11px 4px 0;
+      background: var(--amber);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 {
+      font-family: var(--serif);
+      font-weight: 500;
+      letter-spacing: -.025em;
+      line-height: .99;
+    }
+    h1 { font-size: clamp(3.75rem, 7.5vw, 7.5rem); }
+    h2 { font-size: clamp(2.7rem, 5vw, 5.1rem); }
+    h3 { font-size: clamp(1.6rem, 2.4vw, 2.35rem); line-height: 1.08; }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 20px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      transition: background .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button--amber { background: var(--amber); color: var(--night); }
+    .button--amber:hover { background: #ffb12b; }
+    .button--ghost { border-color: rgba(255,255,255,.55); color: var(--white); }
+    .button--ghost:hover { border-color: var(--white); background: rgba(255,255,255,.09); }
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+    }
+    .text-link::after { content: "→"; color: var(--amber-dark); }
+
+    /* Header */
+    .site-header {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 20;
+      color: var(--white);
+      border-bottom: 1px solid rgba(255,255,255,.21);
+    }
+    .nav {
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+      text-decoration: none;
+    }
+    .brand img {
+      width: 232px;
+      height: auto;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(18px, 2.3vw, 36px);
+    }
+    .nav-links a:not(.button) {
+      color: rgba(255,255,255,.9);
+      font-size: .89rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .nav-links a:not(.button):hover { color: var(--white); }
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(255,255,255,.4);
+      background: rgba(0,0,0,.15);
+      color: var(--white);
+      font: inherit;
+      font-weight: 700;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 880px;
+      height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      color: var(--white);
+      background: var(--night) url("https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1800&q=84") center 57% / cover no-repeat;
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(3,8,10,.9) 0%, rgba(3,8,10,.68) 39%, rgba(3,8,10,.15) 76%),
+        linear-gradient(0deg, rgba(3,8,10,.8) 0%, transparent 45%, rgba(3,8,10,.35) 100%);
+    }
+    .hero-content {
+      padding-bottom: clamp(62px, 9vh, 105px);
+      width: min(860px, 80%);
+    }
+    .hero h1 { max-width: 850px; margin-bottom: 25px; }
+    .hero-lead {
+      max-width: 700px;
+      margin-bottom: 32px;
+      color: rgba(255,255,255,.9);
+      font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+      line-height: 1.45;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-note {
+      position: absolute;
+      right: max(24px, calc((100vw - var(--max)) / 2));
+      bottom: 62px;
+      width: 245px;
+      padding: 20px 0 0;
+      border-top: 1px solid rgba(255,255,255,.55);
+      color: rgba(255,255,255,.83);
+      font-size: .86rem;
+      line-height: 1.45;
+    }
+    .hero-note strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--white);
+      font-size: .78rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    /* Intro statement */
+    .statement {
+      padding: clamp(90px, 13vw, 175px) 0;
+      background: var(--paper);
+    }
+    .statement-grid {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 70px;
+      align-items: start;
+    }
+    .statement h2 { max-width: 930px; margin-bottom: 36px; }
+    .statement-copy {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 38px;
+      max-width: 850px;
+    }
+    .statement-copy p { margin-bottom: 0; color: var(--ink-soft); font-size: 1.08rem; }
+
+    /* Photo split */
+    .problem { background: var(--white); }
+    .photo-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(420px, .92fr);
+      min-height: 760px;
+    }
+    .photo-split__image {
+      position: relative;
+      min-height: 610px;
+      overflow: hidden;
+    }
+    .photo-split__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .photo-caption {
+      position: absolute;
+      left: 24px;
+      bottom: 20px;
+      max-width: 390px;
+      margin: 0;
+      padding: 9px 12px;
+      background: rgba(9,16,18,.8);
+      color: rgba(255,255,255,.84);
+      font-size: .74rem;
+    }
+    .photo-split__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(60px, 7vw, 108px);
+    }
+    .photo-split__content h2 { margin-bottom: 30px; }
+    .photo-split__content > p { max-width: 590px; color: var(--ink-soft); font-size: 1.08rem; }
+    .decision-list {
+      list-style: none;
+      margin: 30px 0 0;
+      padding: 0;
+      border-top: 1px solid var(--line);
+    }
+    .decision-list li {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      gap: 12px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+      font-weight: 600;
+    }
+    .decision-list span { color: var(--amber-dark); }
+
+    /* Intelligence */
+    .intelligence {
+      padding: clamp(95px, 12vw, 160px) 0;
+      background: var(--night);
+      color: var(--white);
+    }
+    .intelligence-head {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 70px;
+      align-items: end;
+      margin-bottom: 68px;
+    }
+    .intelligence-head h2 { max-width: 790px; margin-bottom: 0; }
+    .intelligence-head p { margin-bottom: 7px; color: rgba(255,255,255,.72); font-size: 1.05rem; }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+    .flow-item {
+      min-height: 280px;
+      padding: 32px 34px 34px 0;
+      border-right: 1px solid var(--line-light);
+    }
+    .flow-item + .flow-item { padding-left: 34px; }
+    .flow-item:last-child { border-right: 0; }
+    .flow-number {
+      display: block;
+      margin-bottom: 56px;
+      color: var(--amber);
+      font: 500 2rem/1 var(--serif);
+    }
+    .flow-item h3 { margin-bottom: 15px; }
+    .flow-item p { margin-bottom: 0; color: rgba(255,255,255,.68); }
+    .research-layer {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr);
+      gap: clamp(46px, 7vw, 95px);
+      align-items: center;
+      margin-top: 90px;
+    }
+    .research-image {
+      position: relative;
+      padding: 14px;
+      background: #182326;
+      border: 1px solid rgba(255,255,255,.23);
+    }
+    .research-image img { width: 100%; }
+    .research-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 11px 2px 0;
+      color: rgba(255,255,255,.55);
+      font-size: .76rem;
+    }
+    .research-copy h3 { font-size: clamp(2.3rem, 4vw, 4rem); margin-bottom: 24px; }
+    .research-copy p { color: rgba(255,255,255,.72); }
+    .research-copy .boundary {
+      margin: 29px 0;
+      padding: 18px 0;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+      color: var(--white);
+    }
+    .research-copy .text-link { color: var(--white); }
+    .research-copy .text-link::after { color: var(--amber); }
+
+    /* HeatSafe */
+    .heatsafe { padding: clamp(95px, 12vw, 165px) 0; background: #dde0d8; }
+    .heatsafe-head {
+      display: grid;
+      grid-template-columns: .78fr 1.22fr;
+      gap: 70px;
+      align-items: start;
+      margin-bottom: 70px;
+    }
+    .heatsafe-head h2 { margin-bottom: 27px; }
+    .heatsafe-intro { max-width: 720px; color: var(--ink-soft); font-size: 1.12rem; }
+    .heatsafe-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(420px, .95fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+    .heatsafe-photo { min-height: 660px; overflow: hidden; }
+    .heatsafe-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .product-panel {
+      min-height: 660px;
+      padding: clamp(28px, 4vw, 55px);
+      background: var(--night-2);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-kicker {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255,255,255,.18);
+      color: rgba(255,255,255,.67);
+      font-size: .78rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .live-dot::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 7px;
+      border-radius: 50%;
+      background: #83c87b;
+    }
+    .risk-readout { padding: 42px 0 30px; }
+    .risk-readout small { display: block; color: rgba(255,255,255,.6); }
+    .risk-number {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 7px 0 25px;
+      font: 500 clamp(4.4rem, 8vw, 7.2rem)/1 var(--serif);
+    }
+    .risk-number span { font: 600 .9rem/1 var(--sans); color: #ffd187; text-transform: uppercase; letter-spacing: .1em; }
+    .risk-bar { position: relative; height: 8px; background: linear-gradient(90deg, #67b87c, #e7c64e 52%, #ee7d31 77%, #d7422d); }
+    .risk-bar::after {
+      content: "";
+      position: absolute;
+      left: 72%;
+      top: -5px;
+      width: 3px;
+      height: 18px;
+      background: white;
+    }
+    .forecast-rows { border-top: 1px solid rgba(255,255,255,.18); }
+    .forecast-row {
+      display: grid;
+      grid-template-columns: 86px 1fr auto;
+      gap: 16px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,.18);
+      font-size: .9rem;
+    }
+    .forecast-row span { color: rgba(255,255,255,.62); }
+    .forecast-row strong { color: #ffd187; }
+    .product-note { margin: 28px 0 0; color: rgba(255,255,255,.52); font-size: .75rem; }
+    .heatsafe-benefits {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 52px;
+    }
+    .benefit { padding-top: 21px; border-top: 2px solid var(--ink); }
+    .benefit h3 { margin-bottom: 12px; font-family: var(--sans); font-size: 1.08rem; font-weight: 700; letter-spacing: 0; }
+    .benefit p { margin-bottom: 0; color: var(--ink-soft); }
+
+    /* Use cases */
+    .use-cases { background: var(--paper); padding: clamp(90px, 11vw, 145px) 0; }
+    .use-heading {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 70px;
+      margin-bottom: 55px;
+    }
+    .use-heading h2 { margin-bottom: 0; }
+    .use-list { border-top: 1px solid var(--line); }
+    .use-row {
+      display: grid;
+      grid-template-columns: 70px .85fr 1.15fr;
+      gap: 38px;
+      align-items: start;
+      padding: 29px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .use-row__number { color: var(--amber-dark); font: 500 1.3rem/1.2 var(--serif); }
+    .use-row h3 { margin: 0; font-family: var(--sans); font-size: 1.17rem; font-weight: 700; letter-spacing: 0; line-height: 1.35; }
+    .use-row p { margin-bottom: 0; color: var(--ink-soft); }
+
+    /* Closing image */
+    .closing-image {
+      position: relative;
+      min-height: 760px;
+      display: flex;
+      align-items: flex-end;
+      color: var(--white);
+      background: var(--night) url("https://upload.wikimedia.org/wikipedia/commons/e/eb/FEMA_-_44314_-_Utility_Equipment_and_workers_in_Oklahoma.jpg") center / cover no-repeat;
+      isolation: isolate;
+    }
+    .closing-image::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(0deg, rgba(5,11,12,.92), rgba(5,11,12,.1) 68%);
+    }
+    .closing-copy { max-width: 900px; padding-bottom: 75px; }
+    .closing-copy h2 { margin-bottom: 25px; }
+    .closing-copy p { max-width: 650px; color: rgba(255,255,255,.82); font-size: 1.15rem; }
+
+    /* Company / CTA */
+    .company { background: var(--white); padding: clamp(90px, 11vw, 145px) 0; }
+    .company-grid {
+      display: grid;
+      grid-template-columns: .82fr 1.18fr;
+      gap: clamp(55px, 9vw, 125px);
+    }
+    .company h2 { margin-bottom: 0; }
+    .company-copy > p { color: var(--ink-soft); font-size: 1.1rem; }
+    .principles { margin-top: 38px; border-top: 1px solid var(--line); }
+    .principle {
+      display: grid;
+      grid-template-columns: 38px 1fr;
+      gap: 15px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .principle span { color: var(--amber-dark); }
+    .principle p { margin: 0; color: var(--ink); font-weight: 600; }
+
+    .cta { background: var(--amber); padding: 92px 0; }
+    .cta-grid {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 50px;
+    }
+    .cta h2 { max-width: 810px; margin-bottom: 0; font-size: clamp(3rem, 5.5vw, 5.8rem); }
+    .cta .button { flex: 0 0 auto; background: var(--night); color: var(--white); }
+    .cta .button:hover { background: #243033; }
+
+    footer { padding: 40px 0; background: var(--night); color: rgba(255,255,255,.68); font-size: .82rem; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 32px;
+      align-items: end;
+    }
+    .footer-brand img { width: 205px; }
+    .footer-brand p { max-width: 520px; margin: 18px 0 0; }
+    .footer-meta { text-align: right; }
+    .footer-meta p { margin: 6px 0 0; }
+    .footer-meta a { color: rgba(255,255,255,.8); text-underline-offset: 3px; }
+
+    @media (max-width: 980px) {
+      .container { width: min(calc(100% - 36px), var(--max)); }
+      .brand img { width: 206px; }
+      .menu-toggle { display: block; }
+      .nav-links {
+        position: absolute;
+        top: 94px;
+        left: 18px;
+        right: 18px;
+        display: none;
+        align-items: stretch;
+        flex-direction: column;
+        gap: 0;
+        padding: 14px;
+        background: rgba(9,16,18,.97);
+        border: 1px solid rgba(255,255,255,.22);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a:not(.button) { padding: 13px 10px; }
+      .nav-links .button { margin-top: 8px; }
+      .hero-content { width: 100%; }
+      .hero-note { display: none; }
+      .statement-grid, .statement-copy, .intelligence-head, .heatsafe-head, .use-heading, .company-grid { grid-template-columns: 1fr; }
+      .statement-grid, .intelligence-head, .heatsafe-head, .use-heading { gap: 26px; }
+      .photo-split { grid-template-columns: 1fr; }
+      .photo-split__content { padding: 70px 36px; }
+      .flow { grid-template-columns: 1fr; }
+      .flow-item, .flow-item + .flow-item { min-height: 0; padding: 30px 0; border-right: 0; border-bottom: 1px solid var(--line-light); }
+      .flow-item:last-child { border-bottom: 0; }
+      .flow-number { margin-bottom: 24px; }
+      .research-layer, .heatsafe-grid { grid-template-columns: 1fr; }
+      .research-layer { gap: 45px; }
+      .heatsafe-photo { min-height: 520px; }
+      .heatsafe-benefits { grid-template-columns: 1fr; }
+      .use-row { grid-template-columns: 45px 1fr; gap: 15px; }
+      .use-row p { grid-column: 2; }
+    }
+
+    @media (max-width: 620px) {
+      body { font-size: 16px; }
+      .container { width: min(calc(100% - 28px), var(--max)); }
+      .nav { min-height: 96px; }
+      .brand img { width: 188px; }
+      .nav-links { top: 82px; left: 14px; right: 14px; }
+      .hero { min-height: 790px; background-position: 58% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(3,8,10,.86), rgba(3,8,10,.37)), linear-gradient(0deg, rgba(3,8,10,.86), transparent 60%); }
+      .hero-content { padding-bottom: 48px; }
+      .hero h1 { font-size: clamp(3.3rem, 16vw, 5rem); }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .statement-copy { gap: 15px; }
+      .photo-split__image { min-height: 460px; }
+      .photo-split__content { padding: 62px 22px; }
+      .intelligence-head { margin-bottom: 44px; }
+      .research-layer { margin-top: 60px; }
+      .research-label { flex-direction: column; gap: 2px; }
+      .heatsafe-grid { gap: 12px; }
+      .heatsafe-photo, .product-panel { min-height: 520px; }
+      .forecast-row { grid-template-columns: 70px 1fr auto; gap: 10px; }
+      .closing-image { min-height: 680px; background-position: 58% center; }
+      .cta-grid, .footer-grid { align-items: stretch; flex-direction: column; display: flex; }
+      .cta .button { width: 100%; }
+      .footer-meta { text-align: left; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
 </head>
-<body id="top">
-<nav class="nav" id="nav">
-  <div class="wrap navin">
-    <a class="brandcrop" href="#top" aria-label="Tempra Labs home" aria-label="Tempra Labs"></a>
-    <div class="navlinks" id="navlinks"><a href="#products">Products</a><a href="#heatsafe">HeatSafe</a><a href="#platform">Platform</a><a href="#industries">Industries</a><a href="#company">Company</a></div>
-    <a class="navcta" href="mailto:contact@tempralabs.ai?subject=Tempra%20Labs%20Design%20Partner">Talk to us <span>→</span></a>
-    <button class="menu" id="menu" aria-label="Open menu">Menu</button>
-  </div>
-</nav>
-<main>
-<section class="hero">
-  <div class="wrap heroGrid">
-    <div>
-      <div class="eyebrow">AerisIQ-powered decision intelligence</div>
-      <h1>Know what weather will do. <span>Act before it matters.</span></h1>
-      <p class="lead">Tempra Labs turns high-resolution environmental intelligence into <strong>operational decisions, actions, and evidence</strong> for organizations exposed to extreme heat, flooding, and severe weather.</p>
-      <div class="actions"><a class="btn primary" href="#heatsafe">Explore HeatSafe <span>→</span></a><a class="btn ghost" href="mailto:contact@tempralabs.ai?subject=Tempra%20Labs%20Design%20Partner">Become a design partner</a></div>
-      <div class="cred"><div><b>48-hour intelligence</b><span>decision lead time</span></div><div><b>Site + portfolio scale</b><span>from one location to many</span></div><div><b>Action records</b><span>from signal to evidence</span></div></div>
-    </div>
-    <div class="heroPanel" aria-label="Illustrative Tempra dashboard">
-      <div class="panelTop"><span>PORTFOLIO RISK MONITOR</span><span class="live">LIVE INTELLIGENCE</span></div>
-      <div class="panelGrid">
-        <div class="heatmap"><div class="hot a"></div><div class="hot b"></div><div class="hot c"></div><i class="pin p1"></i><i class="pin p2"></i><div class="mapCaption">ILLINOIS · HEAT EXPOSURE · NEXT 24 HOURS</div></div>
-        <div class="metrics"><div class="metric"><small>LOCATIONS ELEVATED</small><strong>18</strong><span>of 62 monitored</span></div><div class="metric"><small>PEAK WBGT</small><strong>91°</strong><span>Joliet · 3 PM</span></div><div class="metric"><small>ACTIONS DUE</small><strong>7</strong><span>before 11 AM</span></div><div class="spark"><i style="height:28%"></i><i style="height:35%"></i><i style="height:42%"></i><i style="height:54%"></i><i style="height:68%"></i><i style="height:88%"></i><i style="height:73%"></i></div></div>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Tempra Labs home">
+        <img src="/assets/tempra-labs-logo-trimmed.png" alt="Tempra Labs">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="nav-links" id="nav-links">
+        <a href="#platform">Platform</a>
+        <a href="#heatsafe">HeatSafe</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#company">Company</a>
+        <a class="button button--amber" href="mailto:contact@tempralabs.ai?subject=Tempra%20Labs%20pilot">Discuss a pilot</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Operational weather intelligence</p>
+          <h1 id="hero-title">Know what may be affected. Act before impact.</h1>
+          <p class="hero-lead">Tempra Labs combines high-resolution weather intelligence with information about people, sites, assets, and operations—helping organizations prioritize what needs attention and decide what to do next.</p>
+          <div class="hero-actions">
+            <a class="button button--amber" href="#heatsafe">Explore HeatSafe</a>
+            <a class="button button--ghost" href="mailto:contact@tempralabs.ai?subject=Tempra%20Labs%20pilot">Discuss a pilot</a>
+          </div>
+        </div>
+      </div>
+      <p class="hero-note"><strong>From forecast to action</strong>Translate changing weather into operational priorities for the teams and assets that matter most.</p>
+    </section>
+
+    <section class="statement" aria-labelledby="statement-title">
+      <div class="container statement-grid">
+        <p class="eyebrow">The opportunity</p>
+        <div>
+          <h2 id="statement-title">Weather data is abundant. Operational clarity is not.</h2>
+          <div class="statement-copy">
+            <p>Most forecasts describe the hazard. They do not explain which crews, sites, assets, or communities should move to the top of the list.</p>
+            <p>Tempra adds operational context, turning environmental signals into a focused view of exposure, consequence, and action.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" aria-labelledby="problem-title">
+      <div class="photo-split">
+        <figure class="photo-split__image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/FEMA_-_44314_-_Utility_Equipment_and_workers_in_Oklahoma.jpg" alt="Utility workers restoring service after severe weather" loading="lazy">
+          <figcaption class="photo-caption">Field restoration after severe weather. Photo: Win Henderson / FEMA, public domain.</figcaption>
+        </figure>
+        <div class="photo-split__content">
+          <p class="eyebrow">The operational gap</p>
+          <h2 id="problem-title">Forecasts identify the hazard. Operations still have to decide what to do.</h2>
+          <p>When conditions change, leaders need more than another layer on a map. They need a shared view of what is exposed, how serious the consequence may be, and where intervention matters first.</p>
+          <ol class="decision-list">
+            <li><span>01</span> Which people, places, and assets are in the path?</li>
+            <li><span>02</span> What is vulnerable—and what is the operational consequence?</li>
+            <li><span>03</span> Which action should happen first?</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="intelligence" id="platform" aria-labelledby="platform-title">
+      <div class="container">
+        <div class="intelligence-head">
+          <div>
+            <p class="eyebrow">The Tempra approach</p>
+            <h2 id="platform-title">A decision layer for weather-sensitive operations.</h2>
+          </div>
+          <p>Connect forecasts to operational context, then surface the priorities a team can act on. The platform is designed to support multiple hazards and sectors without becoming another general-purpose weather dashboard.</p>
+        </div>
+
+        <div class="flow" aria-label="Three parts of the Tempra approach">
+          <article class="flow-item">
+            <span class="flow-number">01</span>
+            <h3>Environmental intelligence</h3>
+            <p>High-resolution forecasts and hazard indicators reveal when and where conditions may become disruptive.</p>
+          </article>
+          <article class="flow-item">
+            <span class="flow-number">02</span>
+            <h3>Operational context</h3>
+            <p>People, sites, assets, schedules, and vulnerability information show what those conditions mean on the ground.</p>
+          </article>
+          <article class="flow-item">
+            <span class="flow-number">03</span>
+            <h3>Prioritized action</h3>
+            <p>Clear, explainable priorities help teams prepare, allocate resources, and communicate before impact.</p>
+          </article>
+        </div>
+
+        <div class="research-layer">
+          <figure class="research-image">
+            <img src="https://aerisiq.io/assets/aeris-map.png" alt="AerisIQ high-resolution severe-weather forecast visualization" loading="lazy">
+            <figcaption class="research-label"><span>High-resolution environmental intelligence</span><span>AerisIQ platform example</span></figcaption>
+          </figure>
+          <div class="research-copy">
+            <p class="eyebrow">Research foundation</p>
+            <h3>Science underneath. Operational decisions on top.</h3>
+            <p>AerisIQ advances high-resolution environmental intelligence. Tempra Labs builds the commercial decision layer that connects those signals to an organization’s people, assets, and operating procedures.</p>
+            <p class="boundary"><strong>AerisIQ:</strong> environmental intelligence and research.<br><strong>Tempra Labs:</strong> decision products for operational teams.</p>
+            <a class="text-link" href="https://aerisiq.io/" target="_blank" rel="noreferrer">Explore the research platform</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="heatsafe" id="heatsafe" aria-labelledby="heatsafe-title">
+      <div class="container">
+        <div class="heatsafe-head">
+          <div>
+            <p class="eyebrow">First application</p>
+            <h2 id="heatsafe-title">HeatSafe</h2>
+          </div>
+          <div>
+            <h3>Plan safer work before heat disrupts the day.</h3>
+            <p class="heatsafe-intro">HeatSafe turns forecast heat risk into practical planning guidance for outdoor and heat-exposed work. Teams can see when risk is likely to rise, who may be affected, and where schedules or controls may need attention.</p>
+            <a class="text-link" href="mailto:contact@tempralabs.ai?subject=HeatSafe%20pilot">Discuss a HeatSafe pilot</a>
+          </div>
+        </div>
+
+        <div class="heatsafe-grid">
+          <figure class="heatsafe-photo">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=84" alt="Workers in high-visibility clothing on an active construction site" loading="lazy">
+          </figure>
+          <div class="product-panel" aria-label="Illustrative HeatSafe product view">
+            <div>
+              <div class="product-kicker"><span>HeatSafe · South Yard</span><span class="live-dot">Forecast current</span></div>
+              <div class="risk-readout">
+                <small>Peak work-period heat risk</small>
+                <div class="risk-number">72<span>High</span></div>
+                <div class="risk-bar" aria-hidden="true"></div>
+              </div>
+              <div class="forecast-rows">
+                <div class="forecast-row"><span>08:00</span><span>Normal controls</span><strong>Moderate</strong></div>
+                <div class="forecast-row"><span>11:00</span><span>Increase monitoring</span><strong>High</strong></div>
+                <div class="forecast-row"><span>14:00</span><span>Reschedule heavy work</span><strong>High</strong></div>
+                <div class="forecast-row"><span>17:00</span><span>Conditions easing</span><strong>Moderate</strong></div>
+              </div>
+            </div>
+            <p class="product-note">Illustrative product view. Final guidance should be configured to an organization’s policies, work types, and local conditions.</p>
+          </div>
+        </div>
+
+        <div class="heatsafe-benefits">
+          <div class="benefit"><h3>See risk by time and place</h3><p>Move from a regional heat outlook to the sites and work periods that require attention.</p></div>
+          <div class="benefit"><h3>Plan with context</h3><p>Consider the work, workforce, local exposure, and relevant organizational controls.</p></div>
+          <div class="benefit"><h3>Communicate clearly</h3><p>Give supervisors and teams a consistent basis for preparation and escalation.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="use-cases" id="use-cases" aria-labelledby="use-title">
+      <div class="container">
+        <div class="use-heading">
+          <p class="eyebrow">Beyond a single hazard</p>
+          <h2 id="use-title">Built for operations where weather has consequences.</h2>
+        </div>
+        <div class="use-list">
+          <article class="use-row">
+            <span class="use-row__number">01</span><h3>Utilities and infrastructure</h3><p>Prioritize exposed service areas, field resources, and critical assets ahead of severe weather.</p>
+          </article>
+          <article class="use-row">
+            <span class="use-row__number">02</span><h3>Outdoor and field operations</h3><p>Adapt work plans as heat, wind, storms, or poor air quality change conditions on the ground.</p>
+          </article>
+          <article class="use-row">
+            <span class="use-row__number">03</span><h3>Campuses and distributed sites</h3><p>Create a shared operating picture across locations with different hazards, exposures, and response needs.</p>
+          </article>
+          <article class="use-row">
+            <span class="use-row__number">04</span><h3>Public and community services</h3><p>Identify where changing conditions may intersect with vulnerable populations and essential services.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-image" aria-labelledby="resilience-title">
+      <div class="container closing-copy">
+        <p class="eyebrow">Operational resilience</p>
+        <h2 id="resilience-title">The objective is not another forecast. It is a better decision.</h2>
+        <p>Tempra Labs is building a practical bridge between environmental intelligence and the people responsible for keeping work, services, and infrastructure moving.</p>
+      </div>
+    </section>
+
+    <section class="company" id="company" aria-labelledby="company-title">
+      <div class="container company-grid">
+        <div>
+          <p class="eyebrow">About Tempra Labs</p>
+          <h2 id="company-title">Weather intelligence designed around real decisions.</h2>
+        </div>
+        <div class="company-copy">
+          <p>Tempra Labs develops operational intelligence products for organizations exposed to weather and climate risk. We bring together atmospheric science, software, and domain knowledge to help teams understand what matters—and act with greater confidence.</p>
+          <div class="principles">
+            <div class="principle"><span>01</span><p>Decision-focused, not data-first.</p></div>
+            <div class="principle"><span>02</span><p>Explainable priorities grounded in operational context.</p></div>
+            <div class="principle"><span>03</span><p>High-resolution science translated into practical action.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container cta-grid">
+        <h2 id="cta-title">Bring your hardest weather-sensitive decision.</h2>
+        <a class="button" href="mailto:contact@tempralabs.ai?subject=Tempra%20Labs%20conversation">Start a conversation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="/assets/tempra-labs-logo-trimmed.png" alt="Tempra Labs">
+        <p>Operational weather intelligence for the people, places, and systems that keep the world moving.</p>
+      </div>
+      <div class="footer-meta">
+        <a href="mailto:contact@tempralabs.ai">contact@tempralabs.ai</a>
+        <p>Photography: Unsplash; Win Henderson / FEMA (public domain).</p>
+        <p>© <span id="year">2026</span> Tempra Labs.</p>
       </div>
     </div>
-  </div>
-</section>
-<div class="process"><div class="wrap processGrid"><div class="step"><small>01</small><b>Predict</b><span>What is coming?</span></div><div class="step"><small>02</small><b>Prioritize</b><span>Who or what matters first?</span></div><div class="step"><small>03</small><b>Act</b><span>What should happen now?</span></div><div class="step"><small>04</small><b>Deliver</b><span>Who needs to know?</span></div><div class="step"><small>05</small><b>Prove</b><span>What actually happened?</span></div></div></div>
-<section class="section" id="products"><div class="wrap"><div class="kicker">Product suite</div><div class="sectionHead"><h2>One decision layer.<br>Multiple climate risks.</h2><p>Tempra products share the same operating model: connect environmental conditions to exposed people and assets, then turn that intelligence into action.</p></div><div class="cards">
-<article class="card featured"><div class="cardTop"><div class="icon">☀</div><div class="badge">FLAGSHIP</div></div><div class="sector">Workforce + Insurance</div><h3>Tempra HeatSafe</h3><p>Move from heat forecasts to avoided loss with hourly WBGT, safe-work windows, supervisor actions, exposure records, and reports.</p><ul><li>Hourly site-specific WBGT</li><li>Safe-work and recovery windows</li><li>Exposure + action records</li></ul><a href="#heatsafe">Explore HeatSafe →</a></article>
-<article class="card"><div class="cardTop"><div class="icon">▦</div><div class="badge">CORE</div></div><div class="sector">Insurance + Enterprise</div><h3>Portfolio Risk Monitor</h3><p>Identify the locations that matter first before and during an event.</p><ul><li>Live exposure map</li><li>Priority queue</li><li>Asset-level intelligence</li></ul><a href="#platform">See the platform →</a></article>
-<article class="card"><div class="cardTop"><div class="icon">≈</div><div class="badge">CORE</div></div><div class="sector">Property + Infrastructure</div><h3>Flood Intelligence</h3><p>Translate rainfall and flood modeling into facility-level impact, timing, access, and protection-gap intelligence.</p><ul><li>High-resolution flood depth</li><li>Onset + recession timing</li><li>Access disruption</li></ul><a href="mailto:contact@tempralabs.ai?subject=Flood%20Intelligence">Discuss a pilot →</a></article>
-<article class="card"><div class="cardTop"><div class="icon">✓</div><div class="badge">CORE</div></div><div class="sector">Claims + Risk Engineering</div><h3>Event Intelligence</h3><p>Reconstruct conditions at a specific place and time with provenance, confidence, and standardized event records.</p><ul><li>Location/time reconstruction</li><li>Source provenance</li><li>Evidence-ready reports</li></ul><a href="mailto:contact@tempralabs.ai?subject=Event%20Intelligence">Discuss a pilot →</a></article>
-<article class="card"><div class="cardTop"><div class="icon">↝</div><div class="badge">COMING NEXT</div></div><div class="sector">Transportation + Logistics</div><h3>Road Intelligence</h3><p>Road-condition intelligence for rain, flooding, extreme heat, and winter hazards.</p><ul><li>Road hazard state</li><li>Route exposure</li><li>Decision-ready alerts</li></ul><a href="mailto:contact@tempralabs.ai?subject=Road%20Intelligence">Join early access →</a></article>
-</div></div></section>
-<section class="section heatsafe" id="heatsafe"><div class="wrap split"><div><div class="kicker">Flagship product</div><h2>From heat forecasts<br>to avoided loss.</h2><p>HeatSafe helps employers, insurers, and risk teams turn hourly heat stress into practical work decisions—and a defensible record of what happened.</p><div class="capList"><div class="cap"><span>01</span><div><b>Hourly site-specific WBGT</b><p>See how heat stress changes through the shift, not just the daily high.</p></div></div><div class="cap"><span>02</span><div><b>Safe-work windows</b><p>Identify lower-risk windows, work/rest guidance, and escalation periods.</p></div></div><div class="cap"><span>03</span><div><b>Exposure + action records</b><p>Capture alerts, acknowledgments, actions, and event evidence.</p></div></div></div><a class="btn primary" href="mailto:contact@tempralabs.ai?subject=Tempra%20HeatSafe%20Pilot">Discuss a HeatSafe pilot →</a></div>
-<div class="ui"><div class="uiHead"><span>HEATSAFE / SITE 018</span><span class="live">LIVE</span></div><div class="uiTitle"><div><small>WAREHOUSE · JOLIET, IL</small><h4>Tuesday heat plan</h4></div><div class="risk">HIGH RISK</div></div><div class="triple"><div class="box"><small>PEAK WBGT</small><strong>91°</strong><span>3:00 PM</span></div><div class="box"><small>EXPOSED SHIFT</small><strong>42</strong><span>workers</span></div><div class="box"><small>SAFE WINDOW</small><strong>3.0h</strong><span>8–11 AM</span></div></div><div class="hourly"><i style="height:30%"></i><i style="height:34%"></i><i style="height:40%"></i><i style="height:48%"></i><i style="height:58%"></i><i style="height:70%"></i><i style="height:84%"></i><i style="height:94%"></i><i style="height:88%"></i><i style="height:78%"></i><i style="height:64%"></i><i style="height:48%"></i></div><div class="recommend"><div class="check">✓</div><div><small>RECOMMENDED ACTION</small><b>Move high-exertion outdoor work before 11 AM</b><span>Notify supervisors · Add recovery break · Confirm water access</span></div><button type="button">Review plan</button></div></div>
-</div></section>
-<section class="section" id="platform"><div class="wrap"><div class="kicker">Intelligence backbone</div><div class="sectionHead"><h2>AerisIQ-powered.<br>Tempra operationalized.</h2><p>Environmental intelligence becomes operational when it is connected to assets, people, thresholds, actions, and records.</p></div><div class="platformGrid"><div class="flow"><div class="flowLabel">ENVIRONMENTAL SIGNALS</div><div class="flowCard"><div class="dot">W</div><div><b>Hyperlocal weather</b><span>forecast intelligence</span></div></div><div class="flowCard"><div class="dot">N</div><div><b>Nowcasting</b><span>rapidly evolving events</span></div></div><div class="flowCard"><div class="dot">F</div><div><b>Flood modeling</b><span>high-resolution impact</span></div></div><div class="flowCard"><div class="dot">H</div><div><b>Heat / WBGT</b><span>human heat stress</span></div></div></div><div class="engine"><div><b>AerisIQ</b><small>INTELLIGENCE</small></div></div><div class="flow output"><div class="flowLabel">TEMPRA DECISION LAYER</div><div class="flowCard"><div class="dot">E</div><div><b>Exposure</b><span>what is at risk?</span></div></div><div class="flowCard"><div class="dot">A</div><div><b>Action</b><span>what should happen?</span></div></div><div class="flowCard"><div class="dot">D</div><div><b>Delivery</b><span>who needs to know?</span></div></div><div class="flowCard"><div class="dot">P</div><div><b>Evidence</b><span>what actually happened?</span></div></div></div></div></div></section>
-<section class="section" id="industries"><div class="wrap"><div class="kicker">Who we build for</div><div class="sectionHead"><h2>Built for operations<br>where weather matters.</h2><p>Tempra is designed for organizations carrying real operational, human, or financial exposure to extreme weather.</p></div><div class="industries"><div class="industry"><div class="big">◈</div><h3>Insurance</h3><p>Risk engineering, loss prevention, portfolio monitoring, and event evidence.</p><span>HEATSAFE · PORTFOLIO · FLOOD · EVENT</span></div><div class="industry"><div class="big">◫</div><h3>Employers</h3><p>Protect outdoor and heat-exposed workers with shift-level decision support.</p><span>HEATSAFE · ACTION WORKFLOWS</span></div><div class="industry"><div class="big">↝</div><h3>Transportation</h3><p>Anticipate route disruption from rain, flood, heat, and winter weather.</p><span>ROAD INTELLIGENCE · FLOOD</span></div><div class="industry"><div class="big">▣</div><h3>Asset operators</h3><p>Prioritize vulnerable sites and trigger preventive action before impact.</p><span>PORTFOLIO · FLOOD · HEATSAFE</span></div></div></div></section>
-<section class="section" id="company"><div class="wrap company"><div><div class="biglogo" role="img" aria-label="Tempra Labs logo"></div><h2>Forecasts describe the weather.<br>We build the decision layer.</h2></div><div class="copy"><p>Tempra Labs is building operational decision-intelligence products for a changing climate—starting with heat risk, property exposure, and severe-weather operations.</p><p>Our products connect environmental intelligence to the last mile: <strong>who is exposed, what action is needed, when it should happen, and how the response is documented.</strong></p><a href="mailto:contact@tempralabs.ai">contact@tempralabs.ai →</a></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="kicker">Design partners</div><h2>Bring us the decision<br>weather makes difficult.</h2><p>We’re looking for insurers, employers, asset operators, transportation organizations, and public-sector partners to shape early pilots.</p><div class="actions"><a class="btn primary" href="mailto:contact@tempralabs.ai?subject=Tempra%20Labs%20Design%20Partner">Start a conversation →</a></div><a class="email" href="mailto:contact@tempralabs.ai">contact@tempralabs.ai</a></div></section>
-</main>
-<footer><div class="wrap"><div class="footerTop"><a class="brandcrop" href="#top" aria-label="Tempra Labs home" aria-label="Tempra Labs"></a><div class="footerNav"><a href="#products">Products</a><a href="#heatsafe">HeatSafe</a><a href="#platform">Platform</a><a href="#company">Company</a><a href="mailto:contact@tempralabs.ai">Contact</a></div></div><div class="footerBottom"><span>© 2026 Tempra Labs Inc. · tempralabs.ai</span><span>Decision Intelligence for a Changing Climate</span></div><div class="legal">References to AerisIQ describe the intended intelligence backbone for Tempra products. Commercial use of University-owned or third-party technology, data, models, or intellectual property is subject to applicable authorization, licensing, data-rights, and agreement terms.</div></div></footer>
-<script>
-const nav=document.getElementById('nav');const menu=document.getElementById('menu');
-window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>20));
-menu.addEventListener('click',()=>nav.classList.toggle('open'));
-document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-</script>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('#nav-links');
+
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
