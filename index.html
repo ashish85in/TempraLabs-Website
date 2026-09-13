@@ -334,13 +334,50 @@
     }
     .decision-list li {
       display: grid;
-      grid-template-columns: 36px 1fr;
-      gap: 12px;
-      padding: 17px 0;
+      grid-template-columns: 64px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 18px 0;
       border-bottom: 1px solid var(--line);
       font-weight: 600;
     }
-    .decision-list span { color: var(--amber-dark); }
+
+    .pictogram {
+      width: 64px;
+      height: 64px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 64px;
+      color: var(--night);
+    }
+    .pictogram svg {
+      width: 62px;
+      height: 62px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .pictogram .accent-stroke { stroke: var(--amber); }
+    .pictogram .accent-fill { fill: var(--amber); stroke: var(--amber); }
+    .pictogram .soft-fill { fill: rgba(243, 162, 27, .13); }
+    .pictogram--light {
+      color: var(--white);
+    }
+    .pictogram--light .accent-stroke { stroke: var(--amber); }
+    .pictogram--light .soft-fill { fill: rgba(243, 162, 27, .16); }
+    .pictogram--large {
+      width: 104px;
+      height: 104px;
+      margin-bottom: 34px;
+    }
+    .pictogram--large svg {
+      width: 100px;
+      height: 100px;
+      stroke-width: 1.9;
+    }
 
     /* Intelligence */
     .intelligence {
@@ -370,11 +407,8 @@
     }
     .flow-item + .flow-item { padding-left: 34px; }
     .flow-item:last-child { border-right: 0; }
-    .flow-number {
-      display: block;
-      margin-bottom: 56px;
-      color: var(--amber);
-      font: 500 2rem/1 var(--serif);
+    .flow-pictogram {
+      margin-bottom: 36px;
     }
     .flow-item h3 { margin-bottom: 15px; }
     .flow-item p { margin-bottom: 0; color: rgba(255,255,255,.68); }
@@ -520,7 +554,7 @@
       padding: 29px 0;
       border-bottom: 1px solid var(--line);
     }
-    .use-row__number { color: var(--amber-dark); font: 500 1.3rem/1.2 var(--serif); }
+    .use-row__icon { align-self: start; }
     .use-row h3 { margin: 0; font-family: var(--sans); font-size: 1.17rem; font-weight: 700; letter-spacing: 0; line-height: 1.35; }
     .use-row p { margin-bottom: 0; color: var(--ink-soft); }
 
@@ -562,7 +596,8 @@
       padding: 17px 0;
       border-bottom: 1px solid var(--line);
     }
-    .principle span { color: var(--amber-dark); }
+    .principle .pictogram { width: 44px; height: 44px; flex-basis: 44px; }
+    .principle .pictogram svg { width: 42px; height: 42px; stroke-width: 2.2; }
     .principle p { margin: 0; color: var(--ink); font-weight: 600; }
 
     .cta { background: var(--amber); padding: 92px 0; }
@@ -618,12 +653,14 @@
       .flow { grid-template-columns: 1fr; }
       .flow-item, .flow-item + .flow-item { min-height: 0; padding: 30px 0; border-right: 0; border-bottom: 1px solid var(--line-light); }
       .flow-item:last-child { border-bottom: 0; }
-      .flow-number { margin-bottom: 24px; }
+      .flow-pictogram { margin-bottom: 22px; }
+      .pictogram--large { width: 82px; height: 82px; }
+      .pictogram--large svg { width: 78px; height: 78px; }
       .research-layer, .heatsafe-grid { grid-template-columns: 1fr; }
       .research-layer { gap: 45px; }
       .heatsafe-photo { min-height: 520px; }
       .heatsafe-benefits { grid-template-columns: 1fr; }
-      .use-row { grid-template-columns: 45px 1fr; gap: 15px; }
+      .use-row { grid-template-columns: 64px 1fr; gap: 15px; }
       .use-row p { grid-column: 2; }
     }
 
@@ -653,6 +690,8 @@
       .cta .button { width: 100%; }
       .footer-meta { text-align: left; }
     }
+
+
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -719,9 +758,9 @@
           <h2 id="problem-title">Forecasts identify the hazard. Operations still have to decide what to do.</h2>
           <p>When conditions change, leaders need more than another layer on a map. They need a shared view of what is exposed, how serious the consequence may be, and where intervention matters first.</p>
           <ol class="decision-list">
-            <li><span>01</span> Which people, places, and assets are in the path?</li>
-            <li><span>02</span> What is vulnerable—and what is the operational consequence?</li>
-            <li><span>03</span> Which action should happen first?</li>
+            <li><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 80 80"><path class="soft-fill" d="M16 54c12-16 28-20 48-12v18H16z"/><path d="M19 56c12-17 29-21 45-13"/><path d="M25 49c7 2 13 2 19-2s10-9 18-7"/><circle class="accent-stroke" cx="25" cy="35" r="9"/><path class="accent-stroke" d="M25 44c-7-8-12-14-12-21a12 12 0 0 1 24 0c0 7-5 13-12 21z"/><circle cx="58" cy="25" r="6"/><path d="M58 31c-5-6-8-10-8-15a8 8 0 0 1 16 0c0 5-3 9-8 15z"/><circle class="accent-fill" cx="44" cy="47" r="3"/></svg></span> Which people, places, and assets are in the path?</li>
+            <li><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 80 80"><path class="soft-fill" d="M40 10l24 10v17c0 17-10 27-24 33-14-6-24-16-24-33V20z"/><path d="M40 10l24 10v17c0 17-10 27-24 33-14-6-24-16-24-33V20z"/><path class="accent-stroke" d="M28 39l8 8 18-22"/><path d="M24 21l16-7 16 7"/></svg></span> What is vulnerable, and what is the operational consequence?</li>
+            <li><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M18 60h18"/><path d="M18 46h26"/><path d="M18 32h18"/><path class="accent-stroke" d="M42 54l20-20"/><path class="accent-stroke" d="M50 30h16v16"/><circle class="soft-fill" cx="42" cy="54" r="10"/><path d="M36 60l6-6 6 6"/></svg></span> Which action should happen first?</li>
           </ol>
         </div>
       </div>
@@ -739,17 +778,17 @@
 
         <div class="flow" aria-label="Three parts of the Tempra approach">
           <article class="flow-item">
-            <span class="flow-number">01</span>
+            <span class="pictogram pictogram--light pictogram--large flow-pictogram" aria-hidden="true"><svg viewBox="0 0 100 100"><path class="soft-fill" d="M25 70h48a17 17 0 0 0 0-34 28 28 0 0 0-52-8A20 20 0 0 0 25 70z"/><path d="M25 70h48a17 17 0 0 0 0-34 28 28 0 0 0-52-8A20 20 0 0 0 25 70z"/><path class="accent-stroke" d="M42 72l-8 16"/><path class="accent-stroke" d="M58 72l-8 16"/><path d="M27 16l-7-7"/><path d="M44 11V3"/><path d="M61 16l7-7"/></svg></span>
             <h3>Environmental intelligence</h3>
             <p>High-resolution forecasts and hazard indicators reveal when and where conditions may become disruptive.</p>
           </article>
           <article class="flow-item">
-            <span class="flow-number">02</span>
+            <span class="pictogram pictogram--light pictogram--large flow-pictogram" aria-hidden="true"><svg viewBox="0 0 100 100"><rect class="soft-fill" x="16" y="16" width="24" height="24"/><rect x="16" y="16" width="24" height="24"/><rect x="60" y="16" width="24" height="24"/><rect x="16" y="60" width="24" height="24"/><rect x="60" y="60" width="24" height="24"/><path class="accent-stroke" d="M40 28h20M28 40v20M72 40v20M40 72h20"/><circle class="accent-fill" cx="50" cy="50" r="5"/></svg></span>
             <h3>Operational context</h3>
             <p>People, sites, assets, schedules, and vulnerability information show what those conditions mean on the ground.</p>
           </article>
           <article class="flow-item">
-            <span class="flow-number">03</span>
+            <span class="pictogram pictogram--light pictogram--large flow-pictogram" aria-hidden="true"><svg viewBox="0 0 100 100"><circle class="soft-fill" cx="46" cy="46" r="28"/><circle cx="46" cy="46" r="28"/><path d="M46 25v23l16 8"/><path class="accent-stroke" d="M60 69l16 16"/><path class="accent-stroke" d="M70 82h16V66"/><path d="M28 20l-8-8"/><path d="M64 20l8-8"/></svg></span>
             <h3>Prioritized action</h3>
             <p>Clear, explainable priorities help teams prepare, allocate resources, and communicate before impact.</p>
           </article>
@@ -824,16 +863,16 @@
         </div>
         <div class="use-list">
           <article class="use-row">
-            <span class="use-row__number">01</span><h3>Utilities and infrastructure</h3><p>Prioritize exposed service areas, field resources, and critical assets ahead of severe weather.</p>
+            <span class="pictogram use-row__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M40 8v64"/><path d="M18 24h44"/><path d="M23 42h34"/><path d="M22 72h36"/><path class="accent-stroke" d="M30 24l10-16 10 16"/><path d="M28 42l12-18 12 18"/></svg></span><h3>Utilities and infrastructure</h3><p>Prioritize exposed service areas, field resources, and critical assets ahead of severe weather.</p>
           </article>
           <article class="use-row">
-            <span class="use-row__number">02</span><h3>Outdoor and field operations</h3><p>Adapt work plans as heat, wind, storms, or poor air quality change conditions on the ground.</p>
+            <span class="pictogram use-row__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path class="accent-stroke" d="M18 60c12-12 31-12 44 0"/><path d="M29 35v-8a11 11 0 0 1 22 0v8"/><path d="M24 35h32"/><path d="M30 35v16h20V35"/><path class="soft-fill" d="M52 48h14v14H52z"/><path d="M52 48h14v14H52z"/></svg></span><h3>Outdoor and field operations</h3><p>Adapt work plans as heat, wind, storms, or poor air quality change conditions on the ground.</p>
           </article>
           <article class="use-row">
-            <span class="use-row__number">03</span><h3>Campuses and distributed sites</h3><p>Create a shared operating picture across locations with different hazards, exposures, and response needs.</p>
+            <span class="pictogram use-row__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path class="soft-fill" d="M14 70V32l26-16 26 16v38z"/><path d="M14 70V32l26-16 26 16v38"/><path d="M30 70V50h20v20"/><path d="M24 40h8M48 40h8"/><path class="accent-stroke" d="M22 30l18-11 18 11"/><path d="M10 70h60"/></svg></span><h3>Campuses and distributed sites</h3><p>Create a shared operating picture across locations with different hazards, exposures, and response needs.</p>
           </article>
           <article class="use-row">
-            <span class="use-row__number">04</span><h3>Public and community services</h3><p>Identify where changing conditions may intersect with vulnerable populations and essential services.</p>
+            <span class="pictogram use-row__icon" aria-hidden="true"><svg viewBox="0 0 80 80"><circle cx="30" cy="28" r="9"/><circle cx="55" cy="32" r="7"/><path d="M14 66c2-15 12-24 25-24s23 9 25 24"/><path d="M47 66c1-9 8-15 18-16"/><path class="accent-stroke" d="M22 52c7 6 15 6 23 0"/><path class="accent-fill" d="M57 16l4 8 8 1-6 6 2 8-8-4-8 4 2-8-6-6 8-1z"/></svg></span><h3>Public and community services</h3><p>Identify where changing conditions may intersect with vulnerable populations and essential services.</p>
           </article>
         </div>
       </div>
@@ -856,9 +895,9 @@
         <div class="company-copy">
           <p>Tempra Labs develops operational intelligence products for organizations exposed to weather and climate risk. We bring together atmospheric science, software, and domain knowledge to help teams understand what matters—and act with greater confidence.</p>
           <div class="principles">
-            <div class="principle"><span>01</span><p>Decision-focused, not data-first.</p></div>
-            <div class="principle"><span>02</span><p>Explainable priorities grounded in operational context.</p></div>
-            <div class="principle"><span>03</span><p>High-resolution science translated into practical action.</p></div>
+            <div class="principle"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M16 40l12 12 30-32"/><path class="accent-stroke" d="M18 64h44"/><path d="M18 18h26"/></svg></span><p>Decision-focused, not data-first.</p></div>
+            <div class="principle"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M16 20h48M16 36h36M16 52h28"/><circle class="soft-fill" cx="58" cy="54" r="11"/><circle cx="58" cy="54" r="11"/><path class="accent-stroke" d="M66 62l8 8"/></svg></span><p>Explainable priorities grounded in operational context.</p></div>
+            <div class="principle"><span class="pictogram" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M34 10v18L18 58a9 9 0 0 0 8 13h28a9 9 0 0 0 8-13L46 28V10"/><path d="M28 10h24"/><path class="accent-stroke" d="M25 54h30"/><path class="accent-fill" d="M50 47a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></span><p>High-resolution science translated into practical action.</p></div>
           </div>
         </div>
       </div>
