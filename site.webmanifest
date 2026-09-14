@@ -9,13 +9,19 @@
   "theme_color": "#091012",
   "icons": [
     {
-      "src": "/assets/tempra-labs-logo-trimmed.png",
+      "src": "/assets/tempra-app-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/tempra-labs-logo.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/tempra-labs-logo.png",
+      "src": "/assets/tempra-labs-logo-trimmed.png",
       "sizes": "any",
       "type": "image/png",
       "purpose": "any"
