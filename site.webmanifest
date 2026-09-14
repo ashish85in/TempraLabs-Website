@@ -9,21 +9,21 @@
   "theme_color": "#091012",
   "icons": [
     {
-      "src": "/assets/tempra-app-icon.svg",
+      "src": "/assets/tempra-app-icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/tempra-labs-logo.png",
-      "sizes": "any",
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/tempra-labs-logo-trimmed.png",
-      "sizes": "any",
-      "type": "image/png",
+      "src": "/assets/tempra-app-icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
       "purpose": "any"
     }
   ]
