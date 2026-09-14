@@ -62,5 +62,5 @@ footer{padding:42px 0 28px;background:var(--night);color:rgba(255,255,255,.68);f
   <div class="container footer-bottom">© 2026 Tempra Labs Inc. · contact@tempralabs.ai</div>
 </footer>
 
-<script>const b=document.querySelector('.menu-toggle'),n=document.querySelector('.nav-links');if(b&&n)b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});</script>
+<script>const b=document.querySelector('.menu-toggle'),n=document.querySelector('.nav-links');function closeMenu(){n.classList.remove('open');b.setAttribute('aria-expanded','false')}if(b&&n){b.addEventListener('click',e=>{e.stopPropagation();const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')});n.addEventListener('click',e=>e.stopPropagation());n.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('click',()=>{if(n.classList.contains('open'))closeMenu()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&n.classList.contains('open'))closeMenu()})}</script>
 </body></html>
