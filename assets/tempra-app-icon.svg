@@ -1,7 +1,17 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <rect width="512" height="512" rx="96" fill="#091012"/>
-  <rect x="26" y="26" width="460" height="460" rx="78" fill="none" stroke="rgba(255,255,255,.10)" stroke-width="2"/>
-  <g transform="translate(126 102) scale(0.65)">
-    <image href="/assets/tempra-labs-logo-trimmed.png" width="400" height="320" preserveAspectRatio="xMidYMid meet"/>
+  <rect x="26" y="26" width="460" height="460" rx="78" fill="none" stroke="#253336" stroke-width="2"/>
+  <g fill="none" stroke="#f3a21b" stroke-width="20" stroke-linecap="round">
+    <line x1="256" y1="76" x2="256" y2="122"/>
+    <line x1="256" y1="390" x2="256" y2="436"/>
+    <line x1="76" y1="256" x2="122" y2="256"/>
+    <line x1="390" y1="256" x2="436" y2="256"/>
+    <line x1="129" y1="129" x2="162" y2="162"/>
+    <line x1="350" y1="350" x2="383" y2="383"/>
+    <line x1="383" y1="129" x2="350" y2="162"/>
+    <line x1="162" y1="350" x2="129" y2="383"/>
   </g>
+  <circle cx="256" cy="256" r="68" fill="#f3a21b"/>
+  <rect x="244" y="202" width="24" height="86" rx="12" fill="#ffffff"/>
+  <circle cx="256" cy="347" r="36" fill="#ffffff"/>
 </svg>
